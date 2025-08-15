@@ -1,0 +1,142 @@
+
+:root {
+  --bg: #0f1420;
+  --card: #161c2c;
+  --muted: #8ea1b5;
+  --text: #eaf2ff;
+  --accent: #3b82f6;   /* azul */
+  --accent-2: #64748b; /* cinza */
+  --alert: #f59e0b;    /* laranja */
+  --ok: #22c55e;
+  --danger: #ef4444;
+}
+
+* { box-sizing: border-box }
+html, body, #root { height: 100% }
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, 'Helvetica Neue', sans-serif;
+  background: radial-gradient(1200px 400px at 50% -10%, #1a2240 0%, #0f1420 60%) fixed, var(--bg);
+  color: var(--text);
+}
+
+/* ---------------- HEADER ---------------- */
+.header {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 16px 22px; border-bottom: 1px solid #1f2937;
+  background: rgba(10,14,25,.6); backdrop-filter: blur(6px);
+  position: sticky; top: 0; z-index: 5;
+}
+.brand { display: flex; gap: 12px; align-items: center }
+.brand .dot { width: 10px; height: 10px; border-radius: 50%; background: linear-gradient(135deg, #6ee7ff, #3b82f6) }
+h1 { font-size: 18px; margin: 0; font-weight: 600; letter-spacing: .2px }
+
+/* ---------------- NAV ---------------- */
+.nav {
+  display: flex; gap: 8px; flex-wrap: wrap;
+}
+.tab {
+  border: 1px solid #22304a; background: #111728; color: #c9dbff;
+  padding: 8px 12px; border-radius: 12px; cursor: pointer; font-size: 14px;
+}
+.tab.active {
+  background: linear-gradient(135deg, #1a2a4a, #0e1832);
+  border-color: #32508e;
+  box-shadow: 0 0 0 1px #274a97 inset;
+}
+
+/* ---------------- LAYOUT ---------------- */
+.container { max-width: 1200px; margin: 0 auto; padding: 20px }
+.grid {
+  display: grid; gap: 14px;
+  grid-template-columns: repeat(12, 1fr);
+}
+.card {
+  background: linear-gradient(180deg, rgba(22,28,44,.95), rgba(18,23,39,.92));
+  border: 1px solid #1b2740; border-radius: 16px; padding: 14px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.25);
+}
+.card h3 { margin: 0 0 8px 0; font-size: 15px; color: #cfe1ff; font-weight: 600 }
+
+/* ---------------- KPIs ---------------- */
+.kpis { display: grid; grid-template-columns: repeat(5,1fr); gap: 12px }
+.kpi {
+  display: flex; flex-direction: column; gap: 6px;
+  padding: 12px; border-radius: 14px;
+  background: #0f172a; border: 1px solid #1e293b;
+}
+.kpi .label { color: var(--muted); font-size: 12px }
+.kpi .value { font-size: 22px; font-weight: 700 }
+.kpi .trend { font-size: 12px }
+
+/* ---------------- BADGES ---------------- */
+.badge {
+  font-size: 12px; padding: 4px 8px; border-radius: 999px;
+  border: 1px solid #334155; color: #cbd5e1; background: #0b1222;
+}
+.badge.alert { border-color: #a16207; color: #ffd38e; background: rgba(245,158,11,.08) }
+.badge.ok    { border-color: #14532d; color: #bbf7d0; background: rgba(34,197,94,.08) }
+
+/* ---------------- TABLE ---------------- */
+.table { width: 100%; border-collapse: collapse; font-size: 14px }
+.table th, .table td {
+  padding: 10px; border-bottom: 1px solid #1f2a44; text-align: left; color: #dbe7ff;
+}
+.status { padding: 4px 8px; border-radius: 999px; font-size: 12px }
+.status.ok   { background: rgba(34,197,94,.12); color: #86efac; border: 1px solid #166534 }
+.status.low  { background: rgba(245,158,11,.12); color: #fed7aa; border: 1px solid #a16207 }
+
+/* ---------------- FILTERS ---------------- */
+.filters { display: flex; gap: 10px; flex-wrap: wrap }
+.input, .select {
+  background: #0b1222;
+  border: 1px solid #22304a;
+  color: #e2eeff;
+  padding: 8px 10px;
+  border-radius: 10px;
+  font-size: 14px;
+  min-height: 36px;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+}
+.input:focus, .select:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px rgba(59,130,246,0.3);
+}
+
+/* Select com cores personalizadas */
+.select option[value="Todos"]    { color: var(--accent) }  /* Azul */
+.select option[value="Crítico"]  { color: var(--alert) }   /* Laranja */
+.select option[value="Sucesso"]  { color: var(--ok) }      /* Verde */
+.select option[value="Erro"]     { color: var(--danger) }  /* Vermelho */
+
+/* ---------------- LEGEND ---------------- */
+.legend { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; font-size: 12px; color: #cbd5e1 }
+.legend .dot { width: 10px; height: 10px; border-radius: 3px; background: #3b82f6 }
+.legend .dot.warning { background: #f59e0b }
+.legend .dot.success { background: #22c55e }
+.legend .dot.error   { background: #ef4444 }
+
+/* ---------------- RESPONSIVIDADE ---------------- */
+@media (max-width: 1024px) {
+  .kpis { grid-template-columns: repeat(2,1fr) }
+}
+@media (max-width: 640px) {
+  .kpis { grid-template-columns: 1fr }
+  .grid { grid-template-columns: 1fr }
+}
+/* Altera o ícone do calendário para branco */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  cursor: pointer;
+}
+
+/* Ajusta cor da seta do select para branco */
+select {
+  color: #fff;
+}
+
+select option {
+  background: #0b1222; /* fundo do dropdown */
+  color: #fff;
+}
