@@ -1,7 +1,7 @@
 # 🚚 Painel de Operações Logísticas
 
 Um dashboard interativo desenvolvido em **React**, com visualização de
-KPIs logísticos, gráficos e mapa de entregas.\
+KPIs logísticos, gráficos e mapa de entregas.
 O objetivo é oferecer um painel centralizado para acompanhamento de
 **pedidos, transportadoras e status de entregas** em todo o Brasil.
 
@@ -21,8 +21,8 @@ O objetivo é oferecer um painel centralizado para acompanhamento de
 
 -   **Mapa Interativo (Leaflet)** com pontos de entrega exibindo status:
 
-    -   ✅ Entregue\
-    -   🔵 Pendente\
+    -   ✅ Entregue
+    -   🔵 Pendente
     -   ❌ Atrasado
 
 -   Interface responsiva e personalizável.
@@ -31,11 +31,11 @@ O objetivo é oferecer um painel centralizado para acompanhamento de
 
 ## 🛠️ Tecnologias Utilizadas
 
--   [React](https://react.dev/)\
--   [Vite](https://vitejs.dev/)\
--   [Recharts](https://recharts.org/)\
+-   [React](https://react.dev/)
+-   [Vite](https://vitejs.dev/)
+-   [Recharts](https://recharts.org/)
 -   [Leaflet](https://leafletjs.com/) + [React
-    Leaflet](https://react-leaflet.js.org/)\
+    Leaflet](https://react-leaflet.js.org/)
 -   [TailwindCSS](https://tailwindcss.com/)
 
 ------------------------------------------------------------------------
@@ -84,8 +84,8 @@ O objetivo é oferecer um painel centralizado para acompanhamento de
 
 ## 🎨 Layout
 
--   Tema escuro (Dark Mode)\
--   Ícones e cores personalizadas\
+-   Tema escuro (Dark Mode)
+-   Ícones e cores personalizadas
 -   Design responsivo para desktop e mobile
 
 ------------------------------------------------------------------------
