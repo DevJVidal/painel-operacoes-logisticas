@@ -90,8 +90,8 @@ O objetivo é oferecer um painel centralizado para acompanhamento de
 
 ------------------------------------------------------------------------
 
-## 📜 .[Licença](https://github.com/DevJVidal/painel-operacoes-logisticas?tab=License-1-ov-file)
+## 📜 Este projeto é licenciado sob a **Licença MIT**.
+.[Licença](https://github.com/DevJVidal/painel-operacoes-logisticas?tab=License-1-ov-file)
 
-Este projeto é licenciado sob a **Licença MIT**.
 ------------------------------------------------------------------------
 👨‍💻 Desenvolvido por **Janderson Vidal**
