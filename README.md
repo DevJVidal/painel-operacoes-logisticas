@@ -40,33 +40,6 @@ O objetivo é oferecer um painel centralizado para acompanhamento de
 
 ------------------------------------------------------------------------
 
-## 🚀 Como Executar o Projeto
-
-1.  Clone o repositório:
-
-    ``` bash
-    git clone https://github.com/seu-usuario/painel-logistica.git
-    cd painel-logistica
-    ```
-
-2.  Instale as dependências:
-
-    ``` bash
-    npm install
-    ```
-
-3.  Rode o projeto:
-
-    ``` bash
-    npm run dev
-    ```
-
-4.  Acesse no navegador:
-
-        http://localhost:5173
-
-------------------------------------------------------------------------
-
 ## 📂 Estrutura do Projeto
 
     painel-logistica/
