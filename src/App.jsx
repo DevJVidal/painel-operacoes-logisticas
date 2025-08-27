@@ -27,7 +27,6 @@ export default function App(){
     <>
       <div className="header">
         <div className="brand">
-          {/* Ícone de caminhão no lugar da bolinha azul */}
           <Truck size={35} color="#043688ff" style={{ marginRight: 8 }} />
           <h1>Painel de Operações Logísticas</h1>
         </div>
