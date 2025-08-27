@@ -1,7 +1,7 @@
 # 🚚 Painel de Operações Logísticas
 
 Um dashboard interativo desenvolvido em **React**, com visualização de
-KPIs logísticos, gráficos e mapa de entregas.\
+KPIs logísticos, gráficos e mapa de entregas.
 O objetivo é oferecer um painel centralizado para acompanhamento de
 **pedidos, transportadoras e status de entregas** em todo o Brasil.
 
@@ -21,8 +21,8 @@ O objetivo é oferecer um painel centralizado para acompanhamento de
 
 -   **Mapa Interativo (Leaflet)** com pontos de entrega exibindo status:
 
-    -   ✅ Entregue\
-    -   🔵 Pendente\
+    -   ✅ Entregue
+    -   🔵 Pendente
     -   ❌ Atrasado
 
 -   Interface responsiva e personalizável.
@@ -31,11 +31,11 @@ O objetivo é oferecer um painel centralizado para acompanhamento de
 
 ## 🛠️ Tecnologias Utilizadas
 
--   [React](https://react.dev/)\
--   [Vite](https://vitejs.dev/)\
--   [Recharts](https://recharts.org/)\
+-   [React](https://react.dev/)
+-   [Vite](https://vitejs.dev/)
+-   [Recharts](https://recharts.org/)
 -   [Leaflet](https://leafletjs.com/) + [React
-    Leaflet](https://react-leaflet.js.org/)\
+    Leaflet](https://react-leaflet.js.org/)
 -   [TailwindCSS](https://tailwindcss.com/)
 
 ------------------------------------------------------------------------
@@ -57,39 +57,14 @@ O objetivo é oferecer um painel centralizado para acompanhamento de
 
 ## 🎨 Layout
 
--   Tema escuro (Dark Mode)\
--   Ícones e cores personalizadas\
+-   Tema escuro (Dark Mode)
+-   Ícones e cores personalizadas
 -   Design responsivo para desktop e mobile
 
 ------------------------------------------------------------------------
 
-## 📜 Licença
-
-Este projeto é licenciado sob a **Licença MIT**.
-
-    MIT License
-
-    Copyright (c) 2025 Janderson Vidal
-
-    Permission is hereby granted, free of charge, to any person obtaining a copy
-    of this software and associated documentation files (the "Software"), to deal
-    in the Software without restriction, including without limitation the rights
-    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-    copies of the Software, and to permit persons to whom the Software is
-    furnished to do so, subject to the following conditions:
-
-    O texto acima da licença deve ser incluído em todas as cópias ou partes
-    substanciais do Software.
-
-    O SOFTWARE É FORNECIDO "NO ESTADO EM QUE SE ENCONTRA", SEM GARANTIAS OU
-    CONDIÇÕES DE QUALQUER TIPO, EXPRESSAS OU IMPLÍCITAS, INCLUINDO, MAS NÃO
-    SE LIMITANDO ÀS GARANTIAS DE COMERCIALIZAÇÃO, ADEQUAÇÃO A UMA FINALIDADE
-    ESPECÍFICA E NÃO VIOLAÇÃO. EM NENHUM CASO OS AUTORES OU DETENTORES DOS
-    DIREITOS SERÃO RESPONSÁVEIS POR QUALQUER RECLAMAÇÃO, DANOS OU OUTRA
-    RESPONSABILIDADE, SEJA EM UMA AÇÃO DE CONTRATO, DELITO OU OUTRA FORMA,
-    DECORRENTE DE OU EM CONEXÃO COM O SOFTWARE OU O USO OU OUTRAS NEGOCIAÇÕES
-    NO SOFTWARE.
+## 📜 Este projeto é licenciado sob a **Licença MIT**.
+- [Licença](https://github.com/DevJVidal/painel-operacoes-logisticas?tab=License-1-ov-file)
 
 ------------------------------------------------------------------------
-
 👨‍💻 Desenvolvido por **Janderson Vidal**
